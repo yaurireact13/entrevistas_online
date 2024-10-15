@@ -204,7 +204,6 @@ footer a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('../image/contact-banner.png');
     height: 60vh;
     display: flex;
     justify-content: center;
