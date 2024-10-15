@@ -6,10 +6,11 @@
     <meta name="description" content="Sitio de entrevistas con personas influyentes">
     <title>Entrevistas</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Estilos personalizados -->
      <link rel="stylesheet" href="style/style.css">
          <!-- Librería de Iconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <!-- Google Fonts -->
@@ -21,7 +22,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand bouncing-text" href="index.html">
             <span class="text-white">Center</span> Yauri
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,30 +89,40 @@
 <!-- Sección Principal de Entrevistas -->
 <div class="container">
     <div class="row">
-        <!-- Tarjeta de Entrevista 1 --> 
-        <div class="col-lg-4 col-md-6">
-            <div class="card h-100" style="max-width: 300px;">
-                <img src="image/team-400x200-1.png" class="card-img-top" alt="Entrevistado 1" style="max-height: 150px; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Entrevista a Juan Pérez</h5>
-                    <p class="card-text">Juan Pérez, CEO de una importante empresa de tecnología, nos cuenta cómo ha revolucionado el sector.</p>
-                </div>
-                <div class="card-footer text-center">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal" onclick="setModalContent('image/team-400x200-1.png', 'Juan Pérez', 'Juan Pérez, CEO de una importante empresa de tecnología, nos cuenta cómo ha revolucionado el sector.');">Leer Entrevista</button>
-                </div>
+    <!-- Tarjeta de Entrevista 1 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100" style="max-width: 300px;">
+            <img src="image/perfil-img-1.jpeg" class="card-img-top" alt="Entrevistado 1"
+                style="max-height: 150px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Entrevista a Juan Pérez</h5>
+                <p class="card-text">Juan Pérez, CEO de una importante empresa de tecnología, nos cuenta cómo ha
+                    revolucionado el sector.</p>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal"
+                    onclick="openInterviewModal('Juan Pérez', 'image/perfil-img-1.jpeg', 'Juan Pérez, CEO de una importante empresa de tecnología, nos cuenta cómo ha revolucionado el sector.')">
+                    Leer Entrevista
+                </button>
             </div>
         </div>
+    </div>
+
 
         <!-- Tarjeta de Entrevista 2 --> 
         <div class="col-lg-4 col-md-6">
             <div class="card h-100" style="max-width: 300px;">
-                <img src="image/team-400x200-2.png" class="card-img-top" alt="Entrevistado 2" style="max-height: 150px; object-fit: cover;">
+                <img src="image/perfil-img-2.jpeg" class="card-img-top" alt="Entrevistado 1"
+                    style="max-height: 150px; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title">Entrevista a Ana López</h5>
-                    <p class="card-text">Ana López, experta en marketing digital, comparte sus estrategias para el éxito en el negocio.</p>
+                    <h5 class="card-title">Entrevista a Joan López</h5>
+                    <p class="card-text">Joan López, experto en marketing digital, comparte sus estrategias para el éxito en el negocio, revolucionado el sector.</p>
                 </div>
                 <div class="card-footer text-center">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal" onclick="setModalContent('image/team-400x200-2.png', 'Ana López', 'Ana López, experta en marketing digital, comparte sus estrategias para el éxito en el negocio.');">Leer Entrevista</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal"
+                        onclick="openInterviewModal('Joan López', 'image/perfil-img-2.jpeg', 'Ana López, experto en marketing digital, comparte sus estrategias para el éxito en el negocio, revolucionado el sector.')">
+                        Leer Entrevista
+                    </button>
                 </div>
             </div>
         </div>
@@ -119,27 +130,34 @@
         <!-- Tarjeta de Entrevista 3 --> 
         <div class="col-lg-4 col-md-6">
             <div class="card h-100" style="max-width: 300px;">
-                <img src="image/team-400x200-3.png" class="card-img-top" alt="Entrevistado 3" style="max-height: 150px; object-fit: cover;">
+                <img src="image/perfil-img-3.jpeg" class="card-img-top" alt="Entrevistado 1"
+                    style="max-height: 150px; object-fit: cover;">
                 <div class="card-body">
                     <h5 class="card-title">Entrevista a Carlos Martínez</h5>
                     <p class="card-text">Carlos Martínez, innovador en sostenibilidad, nos habla sobre el futuro del medio ambiente.</p>
                 </div>
                 <div class="card-footer text-center">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal" onclick="setModalContent('image/team-400x200-3.png', 'Carlos Martínez', 'Carlos Martínez, innovador en sostenibilidad, nos habla sobre el futuro del medio ambiente.');">Leer Entrevista</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal"
+                        onclick="openInterviewModal('Carlos Martínez', 'image/perfil-img-3.jpeg', 'Carlos Martínez, innovador en sostenibilidad, nos habla sobre el futuro del medio ambiente.')">
+                        Leer Entrevista
+                    </button>
                 </div>
             </div>
         </div>
-
         <!-- Tarjeta de Entrevista 4 --> 
         <div class="col-lg-4 col-md-6">
             <div class="card h-100" style="max-width: 300px;">
-                <img src="image/team-400x200-4.png" class="card-img-top" alt="Entrevistado 4" style="max-height: 150px; object-fit: cover;">
+                <img src="image/perfil-img-4.jpeg" class="card-img-top" alt="Entrevistado 1"
+                    style="max-height: 150px; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title">Entrevista a Laura Torres</h5>
-                    <p class="card-text">Laura Torres, escritora y activista, nos comparte su visión sobre la igualdad de género.</p>
+                    <h5 class="card-title">Entrevista a Mauro Torres</h5>
+                    <p class="card-text">Mauro Torres, escritora y activista, nos comparte su visión sobre la igualdad de género.</p>
                 </div>
                 <div class="card-footer text-center">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal" onclick="setModalContent('image/team-400x200-4.png', 'Laura Torres', 'Laura Torres, escritora y activista, nos comparte su visión sobre la igualdad de género.');">Leer Entrevista</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal"
+                        onclick="openInterviewModal('Mauro Torres', 'image/perfil-img-4.jpeg', 'Mauro Torres, escritora y activista, nos comparte su visión sobre la igualdad de género.')">
+                        Leer Entrevista
+                    </button>
                 </div>
             </div>
         </div>
@@ -147,13 +165,17 @@
         <!-- Tarjeta de Entrevista 5 --> 
         <div class="col-lg-4 col-md-6">
             <div class="card h-100" style="max-width: 300px;">
-                <img src="image/team-400x200-5.png" class="card-img-top" alt="Entrevistado 5" style="max-height: 150px; object-fit: cover;">
+                <img src="image/perfil-img-5.jpeg" class="card-img-top" alt="Entrevistado 1"
+                    style="max-height: 150px; object-fit: cover;">
                 <div class="card-body">
                     <h5 class="card-title">Entrevista a Miguel Rodríguez</h5>
                     <p class="card-text">Miguel Rodríguez, fotógrafo y viajero, comparte sus experiencias en lugares exóticos.</p>
                 </div>
                 <div class="card-footer text-center">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal" onclick="setModalContent('image/team-400x200-5.png', 'Miguel Rodríguez', 'Miguel Rodríguez, fotógrafo y viajero, comparte sus experiencias en lugares exóticos.');">Leer Entrevista</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal"
+                        onclick="openInterviewModal('Miguel Rodríguez', 'image/perfil-img-5.jpeg', 'Miguel Rodríguez, fotógrafo y viajero, comparte sus experiencias en lugares exóticos.')">
+                        Leer Entrevista
+                    </button>
                 </div>
             </div>
         </div>
@@ -161,30 +183,37 @@
         <!-- Tarjeta de Entrevista 6 --> 
         <div class="col-lg-4 col-md-6">
             <div class="card h-100" style="max-width: 300px;">
-                <img src="image/team-400x200-6.png" class="card-img-top" alt="Entrevistado 6" style="max-height: 150px; object-fit: cover;">
+                <img src="image/perfil-img-6.jpeg" class="card-img-top" alt="Entrevistado 1"
+                    style="max-height: 150px; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title">Entrevista a Sofía García</h5>
-                    <p class="card-text">Sofía García, emprendedora, nos cuenta sobre su camino hacia el éxito.</p>
+                    <h5 class="card-title">Entrevista a Raul García</h5>
+                    <p class="card-text">Raul García, emprendedora, nos cuenta sobre su camino hacia el éxito.</p>
                 </div>
                 <div class="card-footer text-center">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal" onclick="setModalContent('image/team-400x200-6.png', 'Sofía García', 'Sofía García, emprendedora, nos cuenta sobre su camino hacia el éxito.');">Leer Entrevista</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interviewModal"
+                        onclick="openInterviewModal('Raul García', 'image/perfil-img-6.jpeg', 'Raul García, emprendedora, nos cuenta sobre su camino hacia el éxito.')">
+                        Leer Entrevista
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal -->
+ <!-- Modal -->
 <div class="modal fade" id="interviewModal" tabindex="-1" aria-labelledby="interviewModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog modal-sm-custom"> <!-- Aquí aplicamos la clase -->
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="interviewModalLabel">Entrevista a <span id="modalName"></span></h5>
+                <h5 class="modal-title" id="interviewModalLabel">Entrevista</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img id="modalImage" src="" class="img-fluid" alt="Entrevistado" style="max-height: 150px; object-fit: cover;">
-                <p id="modalContent" class="mt-2"></p>
+                <div class="text-center">
+                    <img id="interviewImage" src="" class="img-fluid rounded mb-3" alt="Entrevistado" style="max-height: 200px;">
+                </div>
+                <h5 id="interviewTitle"></h5>
+                <p id="interviewContent"></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -192,44 +221,6 @@
         </div>
     </div>
 </div>
-
-<!-- Script para establecer el contenido del modal -->
-<script>
-    function setModalContent(image, name, content) {
-        document.getElementById('modalImage').src = image;
-        document.getElementById('modalName').innerText = name;
-        document.getElementById('modalContent').innerText = content;
-    }
-</script>
-
-
-<!-- Modal -->
-<div class="modal fade" id="interviewModal" tabindex="-1" aria-labelledby="interviewModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="interviewModalLabel">Entrevista a <span id="modalName"></span></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img id="modalImage" src="" class="img-fluid" alt="Entrevistado" style="max-height: 300px; object-fit: cover;">
-                <p id="modalContent" class="mt-3"></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Script para establecer el contenido del modal -->
-<script>
-    function setModalContent(image, name, content) {
-        document.getElementById('modalImage').src = image;
-        document.getElementById('modalName').innerText = name;
-        document.getElementById('modalContent').innerText = content;
-    }
-</script>
 
 </main>
 
@@ -293,16 +284,16 @@
             </div>
             <div class="col-md-6">
                 <div class="social-icons">
-                    <a href="#" class="text-white me-4" aria-label="Facebook" style="transition: transform 0.3s;">
+                    <a href="https://www.facebook.com/?_rdc=2&_rdr" class="text-white me-4" aria-label="Facebook" style="transition: transform 0.3s;">
                         <i class="fab fa-facebook-f" style="font-size: 2em;"></i>
                     </a>
-                    <a href="#" class="text-white me-4" aria-label="Twitter" style="transition: transform 0.3s;">
+                    <a href="https://x.com/" class="text-white me-4" aria-label="Twitter" style="transition: transform 0.3s;">
                         <i class="fab fa-twitter" style="font-size: 2em;"></i>
                     </a>
-                    <a href="#" class="text-white me-4" aria-label="Instagram" style="transition: transform 0.3s;">
+                    <a href="https://www.instagram.com/" class="text-white me-4" aria-label="Instagram" style="transition: transform 0.3s;">
                         <i class="fab fa-instagram" style="font-size: 2em;"></i>
                     </a>
-                    <a href="#" class="text-white" aria-label="LinkedIn" style="transition: transform 0.3s;">
+                    <a href="https://www.linkedin.com/feed/" class="text-white" aria-label="LinkedIn" style="transition: transform 0.3s;">
                         <i class="fab fa-linkedin-in" style="font-size: 2em;"></i>
                     </a>
                 </div>
@@ -319,14 +310,15 @@
 <style>
     .social-icons a:hover {
         transform: scale(1.2);
-        color: #ffd700; /* Color dorado en hover */
+        color: #ffd700; 
     }
     .mt-4 a:hover {
-        color: #ffd700; /* Color dorado en hover */
+        color: #ffd700; 
     }
 </style>
 
 <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

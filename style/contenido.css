@@ -1,0 +1,20 @@
+#additionalContent {
+    padding: 20px;
+}
+
+#additionalContent img {
+    max-width: 100%; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#additionalContent h5 {
+    margin: 10px 0; 
+    font-size: 1.3rem; 
+}
+
+#additionalContent p {
+    font-size: 1rem; 
+    color: #666;
+    margin-bottom: 15px; 
+}

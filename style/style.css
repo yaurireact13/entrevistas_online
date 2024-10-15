@@ -6,6 +6,23 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.bouncing-text {
+    display: inline-block; 
+    animation: bounce 1s infinite; 
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); 
+    }
+    60% {
+        transform: translateY(-5px); 
+    }
+}
+
 
 h1, h2 {
     font-weight: 700;
@@ -187,7 +204,7 @@ footer a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('image/contenido-gb') center/cover no-repeat;
+    background-image: url('../image/contact-banner.png');
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -311,4 +328,27 @@ footer a:hover {
 }
 .mt-4 a:hover {
     color: #ffd700; 
+}
+
+/* Estilo personalizado para hacer el modal más pequeño */
+.modal-sm-custom {
+    max-width: 500px; 
+    margin: auto;
+}
+
+.modal-body img {
+    max-width: 100%; 
+    height: auto;
+}
+
+/* Estilo personalizado para el botón "Cerrar" en el modal */
+.modal-footer .btn-secondary {
+    background-color: #ff4c4c; 
+    border-color: #ff4c4c; 
+    color: white; 
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #d43f3f; 
+    border-color: #d43f3f;
 }
