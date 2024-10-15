@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contacto - Center Yauri">
+    <title>Contacto - Center Yauri</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Estilos personalizados -->
+     <link rel="stylesheet" href="style/style.css">
+     <!-- Librería de Iconos (Font Awesome) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Header de contacto */
+        .contact-header {
+            background: url('https://via.placeholder.com/1920x400') center/cover no-repeat;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .contact-header h1 {
+            font-size: 3rem;
+        }
+
+        /* Sección de contacto */
+        .contact-section {
+            padding: 4rem 0;
+        }
+
+        .contact-info h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+        .form-section h4 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-control {
+            margin-bottom: 1rem;
+        }
+
+        .form-section .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 0.8rem 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-section .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Sección de mapa */
+        .map-section {
+            margin-top: 2rem;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .map-section h4 {
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 1.5rem 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Center Yauri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="entrevista.html">Entrevistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categoria.html">Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header de Contacto -->
+    <section class="contact-header">
+        <h1>Contáctanos</h1>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact-section container">
+        <div class="row">
+            <!-- Información de contacto -->
+            <div class="col-md-4 contact-info">
+                <h4>Información de Contacto</h4>
+                <p><i class="fas fa-phone-alt"></i> Teléfono: +51 921 987 815</p>
+                <p><i class="fas fa-envelope"></i> Email: yaurileonjob@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Dirección: Perú, Lima , La Molina 540</p>
+            </div>
+            <!-- Formulario de contacto -->
+            <div class="col-md-8 form-section">
+                <h4>Envíanos un mensaje</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Asunto" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea class="form-control" rows="6" placeholder="Tu mensaje" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Mapa -->
+    <section class="map-section container">
+        <h4>Nuestra Ubicación</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.383973042055!2d-122.0842496846908!3d37.42206597982579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e3c8f7f8fd%3A0xf1080c0cbf60dff5!2sGoogleplex!5e0!3m2!1ses!2sus!4v1634058082926!5m2!1ses!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer text-center py-5" style="background: linear-gradient(to right, #ff7e5f, #feb47b); color: white;">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <h5>Sobre Nosotros</h5>
+                <p style="font-size: 1.1em;">Centro Yauri es un espacio dedicado a la educación y el crecimiento personal. Nuestro objetivo es proporcionar recursos y apoyo a nuestra comunidad.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Enlaces Útiles</h5>
+                <ul class="list-unstyled" style="font-size: 1.1em;">
+                    <li><a href="#" class="text-white">Inicio</a></li>
+                    <li><a href="#" class="text-white">Servicios</a></li>
+                    <li><a href="#" class="text-white">Contacto</a></li>
+                    <li><a href="#" class="text-white">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Suscríbete a Nuestro Boletín</h5>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico" required>
+                        <button class="btn btn-warning" type="submit">Suscribirse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0" style="font-size: 1.5em; font-weight: bold;">&copy; 2024 Center Yauri. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="social-icons">
+                    <a href="#" class="text-white me-4" aria-label="Facebook" style="transition: transform 0.3s;">
+                        <i class="fab fa-facebook-f" style="font-size: 2em;"></i>
+                    </a>
+                    <a href="#" class="text-white me-4" aria-label="Twitter" style="transition: transform 0.3s;">
+                        <i class="fab fa-twitter" style="font-size: 2em;"></i>
+                    </a>
+                    <a href="#" class="text-white me-4" aria-label="Instagram" style="transition: transform 0.3s;">
+                        <i class="fab fa-instagram" style="font-size: 2em;"></i>
+                    </a>
+                    <a href="#" class="text-white" aria-label="LinkedIn" style="transition: transform 0.3s;">
+                        <i class="fab fa-linkedin-in" style="font-size: 2em;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4" style="font-size: 1.1em;">
+            <a href="#" class="text-white me-4" style="transition: color 0.3s;">Política de Privacidad</a>
+            <span class="text-white">|</span>
+            <a href="#" class="text-white ms-4" style="transition: color 0.3s;">Términos y Condiciones</a>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .social-icons a:hover {
+        transform: scale(1.2);
+        color: #ffd700; /* Color dorado en hover */
+    }
+    .mt-4 a:hover {
+        color: #ffd700; /* Color dorado en hover */
+    }
+</style>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
